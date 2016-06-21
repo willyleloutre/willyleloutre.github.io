@@ -1,0 +1,333 @@
+@media (max-width: 640px) {
+
+  body {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        -webkit-hyphens: auto; /* césure propre */
+        -moz-hyphens: auto;
+        hyphens: auto;
+        word-wrap: break-word; /* passage à la ligne forcé */
+    }
+
+    pre { white-space: pre-wrap; } /* pour firefox et les <pre> */
+
+    img,
+    table,
+        td,
+        blockquote,
+        code,
+        pre,
+        textarea,
+        input,
+        iframe,
+        object,
+        embed,
+        video {
+            max-width: 100%;
+        }
+
+        /* conserver le ratio des images */
+        img {
+            height: auto;
+        }
+
+  #nav:hover ul {
+	transition: 0s linear .05s;
+}
+
+.nav1
+{bottom: 30%;
+}
+
+.titre , .titre h2
+{display: block;
+  margin-right: 0;
+  text-align: center;
+}
+
+.titre h2
+{margin-left: 15px;
+}
+
+
+li.toggleSubMenu {
+text-align: left;
+font-size: 1.3em;
+display: inline;
+padding: 2px 10px;
+color: #fff;
+text-decoration: none;
+background: rgb(59,184,187);
+border-radius: 3px;
+margin-left: 20px;
+font-family: "Vollkorn-Regular";
+}
+
+
+.subMenu li {
+display: block;
+margin: 5px 8px 5px 8px;
+background: url(../images/menu-onglet-off.png) no-repeat;
+width:140px;
+height:32px;
+}
+
+.subMenu li:first-child {
+margin: 15px 8px 5px 8px;
+padding-left: 8px;
+}
+
+.nav1 li li
+{ padding: 0 0 0 8px;
+}
+
+
+li#menu-portfolio
+{margin-right: 8px;
+}
+
+
+.subMenu{
+  background:  rgb(59,184,187);
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #666;
+  border-radius:0 3px 3px 3px;
+  position: absolute;
+   top:30px;
+  left: 20px;
+}
+
+.subMenu li{
+  font-size: 0.8em;
+}
+
+.navigation ul.subMenu a {
+  background: none;
+  padding: 3px 0px;
+}
+
+.navigation ul.subMenu li:hover {
+    text-decoration: none;
+    background-image: url(../images/menu-onglet-on.png);
+}
+
+.nav1.fixed
+{bottom: 15px;
+transition: all 0.3s ease 0.1s;
+}
+
+.me.debut{
+background: url(../images/brain-moi-small.png) no-repeat;
+position:inherit;
+width: 206px;
+height:240px;
+top:inherit;
+margin: auto;
+margin-top: 10px;
+}
+
+.icones-tt{
+  display: none;
+}
+
+.intro{
+  height:580px;
+margin:auto;
+}
+
+.txt-intro{
+width:90%;
+}
+
+.txt-intro p{
+  margin-top: 5px;
+}
+/******************************
+            PAGE 2
+*******************************/
+.presentation{
+  margin-left: 0%;
+}
+
+.dev h2, .dev ul, .admin h2, .admin ul, .res h2, .res ul, .asso h2, .asso ul
+{position:initial;
+ text-align: left;
+ right: initial;
+ top: initial;
+ width:240px;
+ margin-top:0px;
+ margin: auto;
+}
+
+.dev h2, .admin h2, .res h2, .asso h2
+{margin-top:20px;
+}
+/******************************
+            PAGE 3
+*******************************/
+#slide-page3{
+height: 1690px;
+}
+
+.imagesite{
+  display:block;
+  margin: auto;
+}
+
+.imagesite2{
+  display:block;
+  margin: auto;
+ padding-left: 35px;
+}
+
+.brecourt-cadre
+{ width: 75%;
+ background: url(../images/border4.png) no-repeat;
+  background-size: 100% 80%;
+}
+
+.brecourt-cadre p{
+  width: 90%;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+
+}
+
+@media (max-width: 575px) {
+
+/******************************
+              PAGE 4
+*******************************/
+  .diplome{
+  display: none;
+  }
+
+.txt-formation p {
+margin: 0 15px 0 15px;
+  }
+
+#slide-page4 ul{
+width: 90%;
+margin: auto;
+margin-bottom: 30px;
+}
+
+.logo1 {
+padding-right: 15px;
+}
+
+.logo2 {
+padding-left: 15px;
+}
+
+.logo1 img{
+width: 140px;
+height: 110px;
+}
+
+.logo2 img{
+width: 110px;
+height: 110px;
+}
+
+/******************************
+              PAGE 5
+*******************************/
+#slide-page5
+{height: 750px;
+}
+
+.letter-back, .letter-front{
+  display: none;
+}
+
+.formulaire {
+  margin-top: 70px;
+  bottom: 0px;
+  background-image: url('../images/lettre-part2.png');
+  width: inherit;
+}
+
+.contact{
+  position: relative;
+  height: 550px;
+  bottom: 0px;
+}
+
+.timbre{
+margin-top: 20px;
+}
+
+}
+
+@media (max-width: 400px) {
+.intro{
+height:680px;
+}
+
+li.toggleSubMenu {
+font-size: 1.1em;
+padding: 2px 10px;
+margin-left: 5px;
+text-align: left;
+}
+
+.subMenu{
+  top:26px;
+  left: 5px;
+}
+
+.subMenu li{
+  font-size: 0.9em;
+}
+
+#slide-page4{
+height: 670px;
+}
+
+
+.logo1 {
+margin-bottom: 25px;
+text-align: center;
+padding-right: 0;
+}
+
+.logo2 {
+padding-left: 0;
+text-align: center;
+margin-bottom: 25px;
+}
+
+/******************************
+              PAGE 5
+*******************************/
+#slide-page5
+{height: 850px;
+}
+
+}
+
+
+@media (max-width: 320px) {
+#slide-page3{
+height: 1760px;
+}
+
+#slide-page4{
+height: 830px;
+}
+
+}
+
+@media (max-device-width:768px) and (orientation: landscape) {
+  html {
+   -webkit-text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+  }
+}

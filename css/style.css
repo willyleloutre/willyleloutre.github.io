@@ -1,0 +1,291 @@
+
+  @font-face {
+      font-family: 'aliens%20and%20cows';
+      src: url('../fonts/aliens%20and%20cows-trial.ttf');
+      /*font-family: 'Chopshop';
+      src:url('../fonts/Chopshop-Regular.ttf');*/
+      font-family: 'CaviarDreams';
+      src:url('../fonts/CaviarDreams.ttf');
+  }
+    @font-face{
+      font-family: 'BlackJack';
+      src:url('../fonts/blackjack.ttf');
+    }
+                  /*BODY*/
+
+body{
+  background-color: #E3DDCF;
+  margin:0;
+  padding:0;
+  border:0;
+  width: 100%;
+  height: 100%;
+}
+
+#container{
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+              /*ETOILES(TOOLTIP)+NOM*/
+
+#etoile{
+    left: 8%;
+    width: 105px;
+    height: 105px;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+#etoile:hover {
+    width: 200px;
+    height: 200px;
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 725px;
+    color: black;
+    /*background-color: rgba(197, 232, 151, 0.9);*/
+    text-align:left;
+    font-family: "CaviarDreams";
+    font-size: 1.2em;
+    border-radius: 12px;
+    padding: 8px 8px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 105%;
+     /*Fade in tooltip - takes 1 second to go from 0% to 100%
+    opac: */
+    opacity: 0;
+    transition: opacity 6s;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+div .left{
+  display:inline-block;
+  width:84%;
+  height: 100%;
+}
+
+div#nom{
+  width:42%;
+  font-family: "aliens and cows";
+  font-size:95px;
+  position:relative;
+  margin-left: 18%;
+}
+
+                  /*NAV*/
+nav{
+  position: relative;
+  left: 16%;
+  margin-top: 5%;
+}
+nav a{
+  font-family: "CaviarDreams";
+  text-decoration:none;
+  color:black;
+  font-size: 1.5em;
+  margin-left: 32px;
+}
+nav a:hover{
+    width: 100px;
+    height: 100px;
+    color:white;
+    border-radius:10px;
+    background-color: #c8e863;
+    padding:4px;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 2s;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    from {background-color: #89a02c;}
+    to {background-color: #c5e897;}
+}
+/* Standard syntax */
+@keyframes example {
+    from {background-color: #708B75;}
+    to {background-color: #c5e897;}
+}
+a#accueil{
+  text-shadow: 0 0 80px
+rgba(255,255,255,.5);
+background: url('../images/fondanim.svg') repeat-y;
+	  -webkit-background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 50s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+
+  }
+  @-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+
+                    /*HR*/
+
+hr{
+  position: relative;
+  height: 0.1em;
+	border: 0;
+	color: black;
+	background-color: black;
+  width: 67%;
+  margin-left:19%;
+}
+
+                    /*ACCROCHE+RESEAUX*/
+
+div#accroche{
+  position: relative;
+  font-family:"BlackJack";
+  font-size: 1.6em;
+  left:19%;
+  margin-top:5%;
+}
+#accroche a{
+  text-decoration: none;
+  list-style: none;
+}
+
+.reseau{
+  position: relative;
+  left:2%;
+  -webkit-transition: width 1s, height 1s, -webkit-transform 1s; /* Safari */
+  transition: width 1s, height 1s, transform 1s;
+}
+.reseau:hover{
+  -webkit-transform: rotate(160deg); /* Safari */
+    transform: rotate(160deg);
+}
+
+                    /*PHOTOS*/
+
+.right {
+  position: absolute;
+  top:1%;
+  right: 0;
+  display:inline-block;
+  width:12%;
+  height: 98%;
+}
+
+#photo{
+  position:relative;
+  height:100%;
+  width: 100%;
+}
+
+#photo img{
+  height:100%;
+}
+#mobile{
+  display:none;
+}
+
+                /*FOOTER*/
+
+.footer{
+  display:inline-block;
+}
+
+footer{
+  position: absolute;;
+  font-family: "CaviarDreams";
+  font-size: 15px;
+  bottom:0;
+  left: 28%;
+}
+footer a:hover{
+  text-decoration:none;
+  list-style: none;
+  color: #89a02c;
+}
+p span a{
+  text-decoration: none;
+  color:black;
+}
+footer p span{
+  margin-left: 2em;
+}
+
+                  /*RESPONSIVE*/
+
+@media screen and (max-width: 720px)
+{
+  #etoile:hover {
+      width: 130px;
+      height: 130px;
+      -webkit-transform: rotate(180deg); /* Safari */
+      transform: rotate(180deg);
+    }
+  #photo{
+    display:none;
+  }
+  #mobile{
+    padding:0;
+    position:relative;
+    display:block;
+    margin-left:30%;
+    margin-top:9%;
+  }
+  div#nom{
+    position: relative;
+    font-size:4em;
+    width:25%;
+  }
+  nav, nav a{
+    position:relative;
+    display:inline-block;
+    font-size:0.9em;
+  }
+  nav a:hover{
+    position: relative;
+    width:25%;
+    height:25%;
+  }
+  hr{
+    left:5%;
+    width:85%;
+  }
+  div#accroche{
+    font-size: 1em;
+    position: relative;
+    left:8%;
+    text-align: center;
+  }
+  .reseau{
+    position:relative;
+    width:1em;
+    height:1em;
+  }
+  footer{
+    position:fixed;
+    font-size: 0.5em;
+    margin-left: 1.5em;
+  }
+
+}

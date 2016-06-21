@@ -1,0 +1,52 @@
+body{
+  background-color: #16201F
+
+}
+
+h1{
+
+color: white;
+text-align: center;
+font-family: 'allan', cursive;
+font-size: 50px;
+
+
+}
+
+ul{
+
+     display: table;
+     width:1300px;
+     -webkit-animation: slideAnim 20s ease 0s infinite;
+        -moz-animation: slideAnim 20s ease 0s infinite;
+         -ms-animation: slideAnim 20s ease 0s infinite;
+          -o-animation: slideAnim 20s ease 0s infinite;
+             animation: slideAnim 20s ease 0s infinite;
+}
+
+ul li{
+     display: table-cell;
+     width:300px;
+}
+
+@keyframes slideAnim{
+from,5%,to {margin-left:-10px;}
+15%,26%{margin-left:-50px;}
+30%,41%{margin-left:-100px;}
+45%,56%{margin-left:-200px;}
+65%,76%{margin-left:-300px;}
+80%,91%{margin-left:-400px;}
+99.99%{margin-left:-500px;}
+}
+
+.bouton{
+position: absolute;
+top: 25%;
+left: 43%;
+border-radius: 6px;
+background-color: gray;
+padding: 5px 5px 5px 5px;
+color: red;
+
+
+}

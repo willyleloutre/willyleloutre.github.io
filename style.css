@@ -1,0 +1,480 @@
+body{
+
+  background-color: #16201F;
+
+}
+
+a, a:visited {
+    /* Les liens "au repos" et déjà visités antérieurement */
+    color: black; /* couleur noir */
+    text-decoration: none;
+}
+a:hover, a:focus, a:active {
+    /* Les liens au survol, au focus, et actifs : on leur donne la couleur rouge pour l'exemple */
+    color: #ff0000;
+}
+
+
+
+/* accuiel*/
+.texte{
+
+  color: white;
+  margin:inherit;
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+
+}
+
+
+
+/*NAVIGATION*/
+.menu {
+  position:fixed;
+  height: 100%;
+  width: 22px;
+  /*background: #2c3e50;*/
+  transition: width 1s;
+  overflow: hidden;
+  z-index: 99;
+}
+
+.menu:hover {
+  width: 350px;
+}
+
+.menuItem span {
+  position: relative;
+  left:80px;
+  top:10px;
+  transition:color 1s;
+  color:rgba(255,255,255,0);
+}
+
+.menu:hover .menuItem  span {
+ color:rgba(255,255,255,1);
+}
+
+.menuItem {
+  position: relative;
+  padding: 20px;
+  transition:border .5s, background .2s;
+  top:200px;
+}
+
+.menuItem:hover {
+  /*background: #34495e;*/
+  cursor: pointer;
+}
+
+.uno {
+  border-left:20px solid #ffbe00;
+  height: 60px;
+
+}
+
+.uno:hover{
+  border-left:50px solid #ffbe00;
+  background-image: url("ressource/images/NAV/a-propos.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+}
+
+.dos {
+ border-left:20px solid #ff6300;
+ height: 60px;
+
+}
+
+.dos:hover {
+ border-left:50px solid #ff6300;
+ background-image: url("ressource/images/NAV/galerie.png");
+ background-position: center;
+ background-repeat: no-repeat;
+}
+
+.tres {
+  border-left:20px solid #ff0000;
+  height: 60px;
+}
+
+.tres:hover {
+  border-left:50px solid #ff0000;
+  background-image: url("ressource/images/NAV/contact.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+.lolita{
+
+  position: absolute;;
+  color: white;
+  font-family: 'Allan', cursive;
+  font-size: 150px;
+  margin-left: 35%;
+  margin-top: 2%;
+  text-shadow: 2px 3px 4px black; /*mettre une ombre */
+  text-align: center;
+  top: 20%;
+  left: 10%;
+  z-index: 1;
+}
+
+.r-gauche{
+
+  position: absolute;
+  left: 31%;
+  top: -45%;
+  height: 145%;
+  }
+
+.apropos{
+
+  position: absolute;
+  color: #ffbe00;
+  font-family: 'Allan', cursive;
+  font-size: 80px;
+  top: 110%;
+  left: 15%;
+
+}
+
+/* page de presentation */
+.lol{
+
+  position: absolute;
+  color: white;
+  font-family: 'Allan', cursive;
+  font-size: 60px;
+  left: 60%;
+  top: 150%;
+
+}
+
+.description{
+
+  position: absolute;
+  color: white;
+  font-family: 'arial';
+  font-size: 15px;
+  text-align: justify;
+  margin-right: 5%;
+  left: 60%;
+  top: 170%;
+
+}
+
+
+
+.pola{
+  position: absolute;
+  top: 140%;
+  left: 20%;
+  transform: rotate(-25deg);
+  z-index: 1;
+
+}
+
+.rectangle-t{
+
+  position: absolute;;
+  top: 110%;
+  left: 15%;
+
+}
+
+
+
+
+
+/* galerie */
+.galerie{
+
+  position: absolute;
+  color: #ff6300;
+  font-family: 'Allan', cursive;
+  font-size: 80px;
+  top: 230%;
+  left: 15%;
+}
+
+/* effet sur les image*/
+.zoom {
+height:400px;
+}
+
+.zoom p {
+
+  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+     transition: width 2s, height 2s, background-color 2s, transform 2s;
+text-align:center;
+
+}
+.zoom img {
+width:400px;
+height:480px;
+}
+.zoom img:hover {
+width:450px;
+height:550px;
+}
+
+
+
+
+/* images*/
+.couture{
+
+  position: absolute;
+  top: 265%;
+  left: 40%;
+  transform: rotate(15deg);
+
+}
+
+.patisserie{
+
+  position: absolute;
+  top: 225%;
+  left: 50%;
+  transform: rotate(-10deg);
+  z-index: 1;
+
+}
+
+.bricolage{
+
+  position: absolute;
+  top: 225%;
+  left: 69%;
+  transform: rotate(7deg);
+  z-index: 2;
+
+}
+
+.illustration{
+
+  position: absolute;
+  top: 271%;
+  left: 60%;
+  transform: rotate(-7deg);
+
+}
+
+/* texte galerie*/
+.pa{
+  background-color: rgba(245, 243, 234, 0.7);;
+  padding: 2px;
+
+  position: absolute;
+  color: black;
+  font-family: 'Allan',cursive;
+  font-size: 28px;
+  z-index: 1;
+  top: 277%;
+  left: 62%;
+  transform: rotate(-10deg);
+
+}
+
+.bri{
+
+  z-index: 2;
+  position: absolute;
+  color: black;
+  background-color: rgba(245, 243, 234, 0.7);;
+  padding: 2px;
+  font-family: 'Allan',cursive;
+  font-size: 28px;
+  top: 276%;
+  left: 80%;
+  transform: rotate(7deg);
+
+}
+
+.cou{
+
+  z-index: 2;
+  position: absolute;
+  color: black;
+  background-color: rgba(245, 243, 234, 0.7);;
+  padding: 2px;
+  font-family: 'Allan',cursive;
+  font-size: 28px;
+  top: 315%;
+  left: 50%;
+  transform: rotate(15deg);
+
+}
+
+.illu{
+
+  z-index: 2;
+  position: absolute;
+  color: black;
+  background-color: rgba(245, 243, 234, 0.7);;
+  padding: 2px;
+  font-family: 'Allan',cursive;
+  font-size: 28px;
+  top: 323%;
+  left: 73%;
+  transform: rotate(-7deg);
+
+}
+
+/* page contact*/
+.contact{
+
+  position: absolute;
+  color: #ff6300;
+  font-family: 'Allan', cursive;
+  font-size: 80px;
+  top:375%;
+  left: 15%;
+}
+
+.fond-contact{
+
+  position: absolute;;
+  top:360%;
+  left: 15%;
+  margin: 0;
+}
+
+.text-contact{
+
+  position: absolute;
+  color:white;
+  font-family: 'arial';
+  text-align: justify;
+  font-size:16px;
+  top: 395%;
+  left: 35%;
+
+}
+
+.icones{
+
+  position: absolute;
+  top: 417%;
+  left: 64%;
+
+}
+
+
+
+
+/* formulaire de contact */
+form {
+  /* centre le formulaire dans la page*/
+  position: absolute;
+  margin: 0 auto;;
+  width: 400px;
+  top: 428%;
+  left: 35%;
+  color: white;
+
+
+  /* pour voir les limites de la forme */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+div + div {
+  margin-top: 1em;
+
+}
+
+label {
+  /* pour assurer que toutes les étiquettes ont la même taille et sont correctement aliner */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+input, textarea {
+  /* pour assurer que tous les champs de texte ont les mêmes paramètres de police
+  par defaut textarea sont fixés avec une police monospace*/
+  font: 1em sans-serif;
+
+  /* pour donner la même taille à tous les champ de texte*/
+  width: 300px;
+
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+
+  /* pour harmoniser le look et feel du champ de texte frontière */
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  /* pour donner un peu de couleur sur les éléments actifs*/
+  border-color: #000;
+}
+textarea {
+  /* pour aligner correctement le champ de texte avec leur label */
+  vertical-align: top;
+
+  /* pour donner suffisamment d'espace pour taper un texte */
+  height: 5em;
+
+  /* pou permettre aux utilisateur de reimensionner tout textarea verticalement
+  il fonctionne que sur chrom, firefox et safari*/
+  resize: vertical;
+}
+
+.button {
+  /* pour positionner le bouton à la même position des champs de texte */
+  padding-left: 90px; /* même taille que les éléments d'étiquetage */
+}
+
+button {
+  /* représente le même espace qur l'espace entre les étiquettes et les champs de textes */
+  margin-left: .5em;
+}
+
+
+
+
+
+
+
+
+/*RESPONSIV*/
+
+@media screen and (max-width: 480px){
+
+    /* Ici du code s'appliquant aux écrans de moins de 480 pixels de large */
+
+
+}
+
+
+
+/*
+@media  (max-width:780px) and (max-width:979px)
+{
+  [contenu des instruction]*/
+  /*#lolita{float: none;}
+  #r-gauche{float: none;}
+  #menu{float:none;}
+
+}
+
+@media all and (max-width:480px)
+{
+  /*[contenu des instruction (portable)]*/
+  /*#lolita{float: none;}
+  #r-gauche{float: none;}
+
+}*/
